@@ -6,7 +6,7 @@
     --text-color: #000000;
     --link-color: #2563eb;
     --background-color: #ffffff;
-    --light-gray: #f0f0f0;
+    --light-gray: #ebe8e8;
     --gray: #717171;
     --dark-gray: #313131;
 }
@@ -214,7 +214,7 @@ body{
     border-radius: 1.2rem;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    height: 50vh;
+    height: 67vh;
 }
 
 @media screen and (max-width:986px){
@@ -227,7 +227,7 @@ body{
     .main-section{
         width: 90%;
         flex-direction: row;
-        padding: 6rem;
+        padding: 3rem;
     }
 
     .left-content{
@@ -236,6 +236,7 @@ body{
         padding: 2rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 0.2rem;
     }
     
@@ -259,14 +260,79 @@ body{
 
 
     .section-image{
-        height: 65vh;
+        height: 60vh;
     }
 
     .section-description{
         width: 99%;
-        font-size: 1.14rem;
+        font-size: 0.94rem;
         color: var(--gray);
+    }
+}
+
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    animation: slidefromleft 1s ease forwards;
+}
+
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    padding: 1.3rem 2rem;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 0.625rem;
+    margin-top: 1.5rem;
+    width: 35%;
+    margin-bottom: 10rem;
+}
+
+.company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.svg-image{
+   height: 1.8rem;
+}
+
+.logo-txt{
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.company-container h2{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:986px){
+    .company-grid{
+        grid-template-columns: repeat(4, 1fr);
+        width: 40%;
+    }
+
+    .company-container{
+        margin-top: 0;
+    }
+
+    .company-container h2{
+        font-size: 1.65rem;
+        font-weight: bold;
     }
 
 
 }
+
+    
+
+
