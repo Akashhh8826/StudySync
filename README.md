@@ -88,4 +88,3 @@ GitHub: https://github.com/Akashhh8826
 
 ---
 
-⭐ If you like this project, consider giving it a star!
